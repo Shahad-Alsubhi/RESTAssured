@@ -28,6 +28,8 @@ public class C21_BookStoreCURD {
 
         Response response=given(spec).get("/BookStore/v1/Books");
         response.prettyPrint();
+        response.then().statusCode(200);
+
     }
 
     @Test
